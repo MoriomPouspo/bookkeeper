@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane id="AnchorPane" prefHeight="390.0" prefWidth="631.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="bookkeeper.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="390.0" prefWidth="631.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bookkeeper.FXMLDocumentController">
     <children>
       <BorderPane prefHeight="390.0" prefWidth="631.0">
          <left>
