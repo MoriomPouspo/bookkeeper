@@ -16,6 +16,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Pane;
 
 /**
  *
@@ -23,6 +26,10 @@ import javafx.scene.control.Label;
  */
 public class FXMLDocumentController implements Initializable {
 
+    public Pane signUpPane;
+    public Pane loginPane;
+    public Button noAccountButton;
+    public ImageView goBackButton;
     @FXML
     private Label label;
     
@@ -33,5 +40,15 @@ public class FXMLDocumentController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+    }
+
+    public void handleNoAccountButtonPressed(ActionEvent actionEvent) {
+        signUpPane.toFront();
+    }
+
+    public void handleMouseClickEvent(MouseEvent mouseEvent) {
+        if(mouseEvent.getSource().equals(goBackButton)){
+            loginPane.toFront();
+        }
     }
 }
